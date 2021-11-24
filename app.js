@@ -23,8 +23,8 @@ app.use(express.json());
 
 app.get("/movies", async (req,res)=>{
     try {
-        const movies1 = await movies.find().lean().exec()
-        return res.send({movies1})
+        const newmovies = await movies.find().lean().exec()
+        return res.send({newmovies})
     } catch(e){
         res.status(500).json({mesaage :e.message})
     }
