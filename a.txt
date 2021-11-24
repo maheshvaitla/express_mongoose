@@ -1,0 +1,754 @@
+
+> db.moviedata.find({"movie_name" :{$gte :"19000"}}).pretty()
+{
+        "_id" : ObjectId("619e474c3f76e32022cf972a"),
+        "id" : 1,
+        "movie_name" : "Castle of Sand, The (Suna no utsuwa)",
+        "movie_genre" : "Crime|Mystery|Thriller",
+        "production_year" : 1989,
+        "budget" : 19883
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf972b"),
+        "id" : 2,
+        "movie_name" : "Moment to Remember, A (Nae meorisokui jiwoogae)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1998,
+        "budget" : 17176
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf972c"),
+        "id" : 3,
+        "movie_name" : "Traveller",
+        "movie_genre" : "Drama",
+        "production_year" : 2002,
+        "budget" : 18503
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf972d"),
+        "id" : 4,
+        "movie_name" : "Breakfast at Tiffany's",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1989,
+        "budget" : 18179
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf972e"),
+        "id" : 5,
+        "movie_name" : "Modern Times",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2009,
+        "budget" : 16173
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf972f"),
+        "id" : 6,
+        "movie_name" : "Cantinflas",
+        "movie_genre" : "Drama",
+        "production_year" : 1997,
+        "budget" : 17560
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9730"),
+        "id" : 7,
+        "movie_name" : "Nothing to Declare (Rien à déclarer)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2009,
+        "budget" : 18723
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9731"),
+        "id" : 8,
+        "movie_name" : "Haxan: Witchcraft Through the Ages (a.k.a. The Witches)",
+        "movie_genre" : "Documentary|Horror",
+        "production_year" : 2012,
+        "budget" : 17410
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9732"),
+        "id" : 9,
+        "movie_name" : "Mortal Instruments: City of Bones, The",
+        "movie_genre" : "Action|Adventure|Drama|IMAX",
+        "production_year" : 1993,
+        "budget" : 13582
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9733"),
+        "id" : 10,
+        "movie_name" : "Happiness Is a Warm Blanket, Charlie Brown",
+        "movie_genre" : "Animation|Comedy",
+        "production_year" : 2008,
+        "budget" : 11669
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9734"),
+        "id" : 11,
+        "movie_name" : "Great Gabbo, The",
+        "movie_genre" : "Drama|Musical|Romance",
+        "production_year" : 1996,
+        "budget" : 16615
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9735"),
+        "id" : 12,
+        "movie_name" : "Dogfight",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2000,
+        "budget" : 18166
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9736"),
+        "id" : 13,
+        "movie_name" : "40 Guns to Apache Pass",
+        "movie_genre" : "Adventure|Romance|Western",
+        "production_year" : 1986,
+        "budget" : 17523
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9737"),
+        "id" : 14,
+        "movie_name" : "Fern flowers (Fleur de fougère)",
+        "movie_genre" : "Animation",
+        "production_year" : 1997,
+        "budget" : 14038
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9738"),
+        "id" : 15,
+        "movie_name" : "Shall We Dance",
+        "movie_genre" : "Comedy|Musical|Romance",
+        "production_year" : 2011,
+        "budget" : 12020
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9739"),
+        "id" : 16,
+        "movie_name" : "Pleasantville",
+        "movie_genre" : "Comedy|Drama|Fantasy",
+        "production_year" : 2002,
+        "budget" : 14042
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf973a"),
+        "id" : 17,
+        "movie_name" : "Double Confession",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1993,
+        "budget" : 19822
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf973b"),
+        "id" : 18,
+        "movie_name" : "Tea with Mussolini",
+        "movie_genre" : "Comedy|Drama|War",
+        "production_year" : 2004,
+        "budget" : 15772
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf973c"),
+        "id" : 19,
+        "movie_name" : "Razorback",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2004,
+        "budget" : 15293
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf973d"),
+        "id" : 20,
+        "movie_name" : "Bait",
+        "movie_genre" : "Action|Comedy",
+        "production_year" : 2007,
+        "budget" : 16136
+}
+Type "it" for more
+> db.moviedata.find({"budget" :{$gte :"19000"}}).pretty()
+>
+> db.moviedata.find({"budget" :{$gte :"19000"}}).pretty()
+>
+> db.moviedata.find({"budget" :{$lte :"19000"}}).pretty()
+>
+> db.moviedata.find({budget :{$lte :"19000"}}).pretty()
+> db.moviedata.find({budget :{$gte :19000}}).pretty()
+{
+        "_id" : ObjectId("619e474c3f76e32022cf972a"),
+        "id" : 1,
+        "movie_name" : "Castle of Sand, The (Suna no utsuwa)",
+        "movie_genre" : "Crime|Mystery|Thriller",
+        "production_year" : 1989,
+        "budget" : 19883
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf973a"),
+        "id" : 17,
+        "movie_name" : "Double Confession",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1993,
+        "budget" : 19822
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf974a"),
+        "id" : 33,
+        "movie_name" : "Burrowers, The",
+        "movie_genre" : "Horror|Thriller|Western",
+        "production_year" : 2002,
+        "budget" : 19870
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf974f"),
+        "id" : 38,
+        "movie_name" : "Freakonomics",
+        "movie_genre" : "Documentary",
+        "production_year" : 2001,
+        "budget" : 19485
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9751"),
+        "id" : 40,
+        "movie_name" : "Benny Goodman Story, The",
+        "movie_genre" : "Drama|Musical",
+        "production_year" : 1998,
+        "budget" : 19079
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9784"),
+        "id" : 91,
+        "movie_name" : "Playmobil: The Secret of Pirate Island",
+        "movie_genre" : "Animation|Children",
+        "production_year" : 2002,
+        "budget" : 19532
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf979e"),
+        "id" : 117,
+        "movie_name" : "Secret Life of Words, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2008,
+        "budget" : 19957
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97a6"),
+        "id" : 125,
+        "movie_name" : "Major Barbara",
+        "movie_genre" : "Comedy",
+        "production_year" : 2006,
+        "budget" : 19510
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97a7"),
+        "id" : 126,
+        "movie_name" : "Harmontown",
+        "movie_genre" : "Documentary",
+        "production_year" : 2010,
+        "budget" : 19852
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97b0"),
+        "id" : 135,
+        "movie_name" : "Send Me No Flowers",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2010,
+        "budget" : 19980
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97b9"),
+        "id" : 144,
+        "movie_name" : "Invictus",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : 19493
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97bc"),
+        "id" : 147,
+        "movie_name" : "Sgt. Pepper's Lonely Hearts Club Band",
+        "movie_genre" : "Adventure|Musical",
+        "production_year" : 2005,
+        "budget" : 19349
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97bf"),
+        "id" : 150,
+        "movie_name" : "Treed Murray",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 19138
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97c7"),
+        "id" : 158,
+        "movie_name" : "Hot Pursuit",
+        "movie_genre" : "Comedy",
+        "production_year" : 1997,
+        "budget" : 19717
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97d5"),
+        "id" : 172,
+        "movie_name" : "Bad Company",
+        "movie_genre" : "Action|Crime|Drama",
+        "production_year" : 1964,
+        "budget" : 19522
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97e7"),
+        "id" : 190,
+        "movie_name" : "Gentlemen",
+        "movie_genre" : "Drama|Romance|Thriller",
+        "production_year" : 2009,
+        "budget" : 19100
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97ea"),
+        "id" : 193,
+        "movie_name" : "Hunger, The",
+        "movie_genre" : "Horror",
+        "production_year" : 1995,
+        "budget" : 19298
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97ec"),
+        "id" : 195,
+        "movie_name" : "Norma Jean & Marilyn",
+        "movie_genre" : "Drama",
+        "production_year" : 2010,
+        "budget" : 19440
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9803"),
+        "id" : 218,
+        "movie_name" : "Still Breathing",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 1994,
+        "budget" : 19621
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf980c"),
+        "id" : 227,
+        "movie_name" : "Harley Davidson and the Marlboro Man",
+        "movie_genre" : "Action|Crime|Drama",
+        "production_year" : 2010,
+        "budget" : 19200
+}
+Type "it" for more
+> db.moviedata.find({budget :{$lte :9000}}).pretty()
+> db.moviedata.find({budget :{$lte :10000}}).pretty()
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9747"),
+        "id" : 30,
+        "movie_name" : "Deceptive Practice: The Mysteries and Mentors of Ricky Jay",
+        "movie_genre" : "Documentary",
+        "production_year" : 1996,
+        "budget" : 9226
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9753"),
+        "id" : 42,
+        "movie_name" : "Polly of the Circus",
+        "movie_genre" : "Comedy|Drama|Fantasy",
+        "production_year" : 2002,
+        "budget" : 9230
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9758"),
+        "id" : 47,
+        "movie_name" : "Right Now (À tout de suite)",
+        "movie_genre" : "Crime|Drama|Romance|Thriller",
+        "production_year" : 1998,
+        "budget" : 9306
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9769"),
+        "id" : 64,
+        "movie_name" : "Kiss Before Dying, A",
+        "movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : 9978
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9771"),
+        "id" : 72,
+        "movie_name" : "Single White Female 2: The Psycho",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 2011,
+        "budget" : 9724
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9772"),
+        "id" : 73,
+        "movie_name" : "Summer Holiday",
+        "movie_genre" : "Musical",
+        "production_year" : 1998,
+        "budget" : 9034
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf977f"),
+        "id" : 86,
+        "movie_name" : "Heart of a Lion (Leijonasydän)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2007,
+        "budget" : 9253
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9785"),
+        "id" : 92,
+        "movie_name" : "Pumzi",
+        "movie_genre" : "Sci-Fi",
+        "production_year" : 1995,
+        "budget" : 9674
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9786"),
+        "id" : 93,
+        "movie_name" : "Night, The (Notte, La)",
+        "movie_genre" : "Drama",
+        "production_year" : 1986,
+        "budget" : 9500
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9793"),
+        "id" : 106,
+        "movie_name" : "Bliss",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2003,
+        "budget" : 9900
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97a8"),
+        "id" : 127,
+        "movie_name" : "Dischord",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 2007,
+        "budget" : 9150
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97b3"),
+        "id" : 138,
+        "movie_name" : "Adventure in Space and Time, An",
+        "movie_genre" : "Drama",
+        "production_year" : 1993,
+        "budget" : 9785
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97b7"),
+        "id" : 142,
+        "movie_name" : "Alice in Wonderland",
+        "movie_genre" : "Children|Fantasy|Sci-Fi",
+        "production_year" : 2002,
+        "budget" : 9201
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97ba"),
+        "id" : 145,
+        "movie_name" : "Father Goose",
+        "movie_genre" : "Adventure|Comedy|Romance|War",
+        "production_year" : 2011,
+        "budget" : 9509
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97c9"),
+        "id" : 160,
+        "movie_name" : "Bohemian Life, The (La vie de bohème)",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2007,
+        "budget" : 9322
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97d8"),
+        "id" : 175,
+        "movie_name" : "Brotherhood of Justice, The",
+        "movie_genre" : "Action|Drama|Thriller",
+        "production_year" : 2009,
+        "budget" : 9039
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97d9"),
+        "id" : 176,
+        "movie_name" : "Honey, We Shrunk Ourselves",
+        "movie_genre" : "Action|Adventure|Children|Comedy|Sci-Fi",
+        "production_year" : 2008,
+        "budget" : 9533
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97e8"),
+        "id" : 191,
+        "movie_name" : "Kickboxer 2: The Road Back",
+        "movie_genre" : "Action|Drama",
+        "production_year" : 2011,
+        "budget" : 9219
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97eb"),
+        "id" : 194,
+        "movie_name" : "Ballroom, The (Chega de Saudade)",
+        "movie_genre" : "Drama|Musical|Romance",
+        "production_year" : 2005,
+        "budget" : 9429
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97f7"),
+        "id" : 206,
+        "movie_name" : "Nueba Yol",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 1995,
+        "budget" : 9451
+}
+Type "it" for more
+> db.moviedata.find({production_year :{gt :2000}},{budget :{$gt:1000}}).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "Expression $gt takes exactly 2 arguments. 1 were passed in.",
+        "code" : 16020,
+        "codeName" : "Location16020"
+}
+> db.moviedata.find({$and :[{production_year :{gt :2000}},{budget :{$gt:1000}}]}).pretty()
+>
+> db.moviedata.find({$and :[{production_year :{gt :2000}},{budget :{$gt:1000}}]}).pretty()
+> db.moviedata.find({$and :[{production_year :{gt :2000}},{budget :{$gt:10000}}]}).pretty()
+> db.moviedata.find({$and :[{production_year :{gt :1995}},{budget :{$gt:15000}}]}).pretty()
+>
+> db.moviedata.find({$and :[{production_year :{gt :1995}},{budget :{$gt:15000}}]}).pretty()
+> db.moviedata.find({budget :{$gt:17000}}).sort({movie_name:1}).limit(5).pretty()
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97af"),
+        "id" : 134,
+        "movie_name" : "11'09\"01 - September 11",
+        "movie_genre" : "Drama",
+        "production_year" : 1974,
+        "budget" : 17865
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf98cd"),
+        "id" : 420,
+        "movie_name" : "40 Days and 40 Nights",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2009,
+        "budget" : 18277
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9736"),
+        "id" : 13,
+        "movie_name" : "40 Guns to Apache Pass",
+        "movie_genre" : "Adventure|Romance|Western",
+        "production_year" : 1986,
+        "budget" : 17523
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf988f"),
+        "id" : 358,
+        "movie_name" : "AKA",
+        "movie_genre" : "Drama",
+        "production_year" : 1994,
+        "budget" : 17359
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97e9"),
+        "id" : 192,
+        "movie_name" : "Adult Camp",
+        "movie_genre" : "Comedy",
+        "production_year" : 2012,
+        "budget" : 18798
+}
+> db.moviedata.find({budget :{$gt:17000}}).sort({movie_name:1}).limit(5).skip(2).pretty()
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9736"),
+        "id" : 13,
+        "movie_name" : "40 Guns to Apache Pass",
+        "movie_genre" : "Adventure|Romance|Western",
+        "production_year" : 1986,
+        "budget" : 17523
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf988f"),
+        "id" : 358,
+        "movie_name" : "AKA",
+        "movie_genre" : "Drama",
+        "production_year" : 1994,
+        "budget" : 17359
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97e9"),
+        "id" : 192,
+        "movie_name" : "Adult Camp",
+        "movie_genre" : "Comedy",
+        "production_year" : 2012,
+        "budget" : 18798
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf98c4"),
+        "id" : 411,
+        "movie_name" : "Art of Dying, The (El Arte de Morir)",
+        "movie_genre" : "Horror|Mystery|Thriller",
+        "production_year" : 1993,
+        "budget" : 18311
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9841"),
+        "id" : 280,
+        "movie_name" : "Asterix in America (a.k.a Asterix Conquers America) (Astérix et les Indiens)",
+        "movie_genre" : "Adventure|Animation|Children|Comedy",
+        "production_year" : 2010,
+        "budget" : 19760
+}
+> db.moviedata.find({budget :{$gt:17000}}).sort({movie_name:1}).skip(2).pretty()
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9736"),
+        "id" : 13,
+        "movie_name" : "40 Guns to Apache Pass",
+        "movie_genre" : "Adventure|Romance|Western",
+        "production_year" : 1986,
+        "budget" : 17523
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf988f"),
+        "id" : 358,
+        "movie_name" : "AKA",
+        "movie_genre" : "Drama",
+        "production_year" : 1994,
+        "budget" : 17359
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97e9"),
+        "id" : 192,
+        "movie_name" : "Adult Camp",
+        "movie_genre" : "Comedy",
+        "production_year" : 2012,
+        "budget" : 18798
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf98c4"),
+        "id" : 411,
+        "movie_name" : "Art of Dying, The (El Arte de Morir)",
+        "movie_genre" : "Horror|Mystery|Thriller",
+        "production_year" : 1993,
+        "budget" : 18311
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9841"),
+        "id" : 280,
+        "movie_name" : "Asterix in America (a.k.a Asterix Conquers America) (Astérix et les Indiens)",
+        "movie_genre" : "Adventure|Animation|Children|Comedy",
+        "production_year" : 2010,
+        "budget" : 19760
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf97d5"),
+        "id" : 172,
+        "movie_name" : "Bad Company",
+        "movie_genre" : "Action|Crime|Drama",
+        "production_year" : 1964,
+        "budget" : 19522
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf985a"),
+        "id" : 305,
+        "movie_name" : "Ballad of Cable Hogue, The",
+        "movie_genre" : "Comedy|Western",
+        "production_year" : 1970,
+        "budget" : 17987
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf977c"),
+        "id" : 83,
+        "movie_name" : "Batman Beyond: Return of the Joker",
+        "movie_genre" : "Action|Animation|Crime|Sci-Fi|Thriller",
+        "production_year" : 1990,
+        "budget" : 18161
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf98fd"),
+        "id" : 468,
+        "movie_name" : "Begotten",
+        "movie_genre" : "Drama|Horror",
+        "production_year" : 2000,
+        "budget" : 19088
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9828"),
+        "id" : 255,
+        "movie_name" : "Behind the Mask: The Rise of Leslie Vernon",
+        "movie_genre" : "Comedy|Horror|Thriller",
+        "production_year" : 2005,
+        "budget" : 18222
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9751"),
+        "id" : 40,
+        "movie_name" : "Benny Goodman Story, The",
+        "movie_genre" : "Drama|Musical",
+        "production_year" : 1998,
+        "budget" : 19079
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9807"),
+        "id" : 222,
+        "movie_name" : "Big Year, The",
+        "movie_genre" : "Comedy",
+        "production_year" : 2008,
+        "budget" : 17837
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9884"),
+        "id" : 347,
+        "movie_name" : "Birdcage, The",
+        "movie_genre" : "Comedy",
+        "production_year" : 2005,
+        "budget" : 18775
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9859"),
+        "id" : 304,
+        "movie_name" : "Birds, The",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2011,
+        "budget" : 19399
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf98a7"),
+        "id" : 382,
+        "movie_name" : "Blindness",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1999,
+        "budget" : 17255
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf9843"),
+        "id" : 282,
+        "movie_name" : "Boat People (Tau ban no hoi)",
+        "movie_genre" : "Drama",
+        "production_year" : 2009,
+        "budget" : 19555
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf979f"),
+        "id" : 118,
+        "movie_name" : "Body of Evidence",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 2000,
+        "budget" : 17075
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf972d"),
+        "id" : 4,
+        "movie_name" : "Breakfast at Tiffany's",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1989,
+        "budget" : 18179
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf974a"),
+        "id" : 33,
+        "movie_name" : "Burrowers, The",
+        "movie_genre" : "Horror|Thriller|Western",
+        "production_year" : 2002,
+        "budget" : 19870
+}
+{
+        "_id" : ObjectId("619e474c3f76e32022cf983e"),
+        "id" : 277,
+        "movie_name" : "Busting",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1997,
+        "budget" : 19621
+}
+Type "it" for more
+>
