@@ -30,6 +30,46 @@ app.get("/movies", async (req,res)=>{
     }
 })
 
+app.post("/movies", async (req,res)=>{
+    try {
+        const newmovies = await movies.create(req.body);
+        return res.status(201).send(newmovies)
+
+    } catch(e){
+        res.status(500).json({mesaage :e.message})
+
+    }
+})
+
+app.get("/movies/:id", async (req,res) =>{
+    try{
+     const newmovies = await movies.findById(req.params.id).lean().exec();
+     return res.send({newmovies})
+    } catch(e){
+        res.status(500).json({mesaage :e.message})
+    }
+})
+
+app.patch("/movies/:id", async (req,res) =>{
+    try{
+        const newmovies = await movies.findByIdAndUpdate(req.params.id,req.body,{new:true});
+        return res.status(201).send(newmovies);
+
+    } catch(e){
+        res.status(500).json({mesaage :e.message})
+    }
+})
+
+app.delete("/movies/:id", async (req,res) => {
+    try {
+        const newmovies = await movies.findByIdAndDelete(req.params.id).lean().exec()
+        return res.status(201).send(newmovies)
+    } catch(e){
+        return res.status(500).json({mesaage :e.message})
+
+    }
+})
+
 
 
 app.listen(2345, async function (){
